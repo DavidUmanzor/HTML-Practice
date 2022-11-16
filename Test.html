@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML5 Layout</title>
+<style type="text/css">
+header, section, footer, aside, nav, article, figure, figcaption {
+display: block;}
+
+body {
+color: #666666;
+background-color: #f9f8f6;
+background-image: url("metal-image.webp");
+background-position: center;
+font-family: Georgia, Times, serif;
+line-height: 1.4em;
+margin: 0px;}
+
+.wrapper {
+width: 1040px;
+margin: 20px auto 20px auto;
+border: 2px solid #000000;
+background-color: #D5E6E6;}
+header {
+height: 40px;
+}
+
+h1 {
+text-indent: -9999px;
+width: 940px;
+height: 0px;
+margin: 0px;}
+
+nav, footer {
+clear: both;
+color: #ffffff;
+background-color: #aeaca8;
+height: 30px;}
+
+nav ul {
+margin: 0px;
+padding: 5px 0px 5px 30px;}
+
+nav li {
+display: inline;
+margin-right: 40px;}
+
+nav li a {
+color: #ffffff;}
+
+nav li a:hover, nav li a.current {
+color: #000000;}
+
+section.courses {
+float: left;
+width: 650px;
+border-right: 1px solid #eeeeee;}
+
+article {
+clear: both;
+overflow: auto;
+width: 100%;}
+
+hgroup {
+margin-top: 40px;}
+
+figure {
+float: left;
+width: 290px;
+height: 120px;
+padding: 20px;
+margin: 0px;
+border: 0px solid #eeeeee;}
+
+figcaption {
+font-size: 90%;
+text-align: left;}
+
+aside {
+width: 200px;
+float: left;
+padding: 0px 0px 0px 20px;}
+
+aside section a {
+display: block;
+padding: 10px;
+border-bottom: 1px solid #eeeeee;}
+
+aside section a:hover {
+color: #985d6a;
+background-color: #efefef;}
+
+a {
+color: #de6581;
+text-decoration: none;}
+h1, h2, h3 {
+font-weight: normal;}
+
+h2 {
+margin: 10px 0px 5px 0px;
+padding: 0px;}
+
+.Moisture-Label {
+position: absolute;
+top: 250px;
+left:290px;}
+
+.Moisture-Data {
+position: absolute;
+top: 280px;
+left:350px;}
+
+.Light-Label {
+position: absolute;
+top: 410px;
+left:310px;}
+
+.Light-Data {
+position: absolute;
+top: 440px;
+left:350px;}
+
+.Temperature-Label {
+position: absolute;
+top: 560px;
+left:310px;}
+
+.Temp-Data {
+position: absolute;
+top: 590px;
+left:350px;}
+
+h3 {
+margin: 0px 0px 10px 0px;
+color: #de6581;}
+
+aside h2 {
+padding: 30px 0px 10px 0px;
+color: #de6581;}
+
+footer {
+font-size: 80%;
+padding: 7px 0px 0px 20px;}
+
+</style>
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div class="wrapper">
+
+<header>
+<h1>Dashboard</h1>
+
+<nav>
+<ul>
+<li><a href="Test.html" class="current">dashboard</a></li>
+<li><a href="">analytics</a></li>
+<li><a href="">about</a></li>
+<li><a href="">contact</a></li>
+</ul>
+</nav>
+
+</header>
+
+
+<section class="courses">
+
+<article>
+
+<hgroup>
+<h2>Smart Garden</h2>
+<h3>Monitoring System</h3>
+</hgroup>
+<p>A way to monitor plant mositure and light level to keep the plant healthy.</p>
+</article>
+
+<article>
+<figure>
+<img src="Water Tab.png" alt=" " />
+</ br>
+</figure>
+<hgroup>
+<h2 class="Moisture-Label">Moisture Level</h2>
+<h2 class="Moisture-Data">50%</h2>
+<figure>
+<img src="Light Tab.png" alt=" " />
+</ br>
+</figure>
+<hgroup>
+<h2 class="Light-Label">Light Level</h2>
+<h2 class="Light-Data">80%</h2>
+<figure>
+<img src="Temp Tab.png" alt=" " />
+</ br>
+</figure>
+<hgroup>
+<h2 class="Temperature-Label">Temp Level</h2>
+<h2 class="Temp-Data">75 F</h2>
+</article>
+
+</section>
+<aside>
+<section class="How it Works">
+<h2>Navigation</h2>
+<ul>
+<li><a href="" class="current">Overview</a></li>
+<li><a href="">Moisture</a></li>
+<li><a href="">Light</a></li>
+<li><a href="">Tempature</a></li>
+</ul>
+</section>
+<section class="contact-details">
+<h2>Contact</h2>
+<p>David Umanzor<br />
+Email<br />
+<a href="https://www.linkedin.com/in/david-umanzor/">LinkedIn</a><br />
+<a href="https://github.com/Zarthanix">GitHub<a></p>
+</section>
+</aside>
+<footer>
+&copy; 2022 David Umanzor
+</footer>
+</div><!-- .wrapper -->
+</body>
+</html>
+
